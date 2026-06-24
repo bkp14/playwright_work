@@ -4,8 +4,11 @@ import dotenv from 'dotenv'
 const envName = process.env.ENV || 'qa';
 
 dotenv.config({
+  // Force Playwright to always use your unrestricted E: drive folder for all browsers
   path: `./env/.env.${envName}`
+
 });
+    process.env.PLAYWRIGHT_BROWSERS_PATH = 'E:\\playwright_work\\pw-browsers';
 
 /**
  * Read environment variables from file.
@@ -29,14 +32,17 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    ['html', { open: 'never' }],
+    ['allure-playwright']
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
          
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'on',
     screenshot:'on-first-failure',
-    video: 'on-first-retry',
+    video: 'retain-on-failure',
     headless:true,
     
     
@@ -46,29 +52,11 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
 {
-  name: 'chrome',
+  name: 'chromium',
   use: {
     ...devices['Desktop Chrome'],
-    channel: 'chrome',
   },
 },
-{
-  name: 'edge',
-  use: {
-    ...devices['Desktop Edge'],
- 
-  },
-},
-{
-  name: 'brave',
-  use: {
-    browserName: 'chromium',
-    launchOptions: {
-      executablePath: 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe',
-    },
-  },
-}
-,
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },

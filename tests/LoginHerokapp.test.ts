@@ -12,8 +12,8 @@ test('valid Login Test',async ({page}) => {
 });
 
 test ('invalid login test',async({page}) => {
-    await page.fill('#username',"dsb");
-    await page.fill('#password',"dsaw2");
+  await page.fill('#username',"kn");
+    await page.fill('#password','n kh');
     await page.click('.fa.fa-2x.fa-sign-in'); 
     await expect(page.locator("//div[@id='flash']"))
     .toContainText('Your username is invalid!');
@@ -22,5 +22,5 @@ test ('invalid login test',async({page}) => {
 })
 })
 test.afterEach(async({page})=>{
-  console.log("test completed!")
+  console.log("test completed")
 })

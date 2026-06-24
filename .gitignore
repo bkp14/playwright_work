@@ -6,3 +6,10 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+pw-browsers/
+node_modules/
+test-results/
+playwright-report/
+allure-results/
+.env.*

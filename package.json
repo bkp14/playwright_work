@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test:qa": "cross-env ENV=qa playwright test",
-    "test:uat": "cross-env ENV=qa playwright test",
-    "test:prod": "cross-env ENV=qa playwright test"
+"scripts": {
+    "test:qa": "cross-env ENV=qa playwright test tests/LoginHerokapp.test.ts",
+    "test:uat": "cross-env ENV=uat playwright test tests/LoginTutorialsNinja.test.ts",
+    "test:prod": "cross-env ENV=prod playwright test tests/LoginDemoBlaze.test.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.0.0",
     "allure-playwright": "^3.10.1",
+    "concurrently": "^10.0.3",
     "cross-env": "^10.1.0"
   },
   "dependencies": {
