@@ -8,8 +8,7 @@ dotenv.config({
   path: `./env/.env.${envName}`
 
 });
-    process.env.PLAYWRIGHT_BROWSERS_PATH = 'E:\\playwright_work\\pw-browsers';
-
+process.env.PLAYWRIGHT_BROWSERS_PATH = process.env.PLAYWRIGHT_BROWSERS_PATH || 'E:\\playwright_work\\pw-browsers';
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
