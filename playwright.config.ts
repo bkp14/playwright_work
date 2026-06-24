@@ -36,7 +36,7 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
     screenshot:'on-first-failure',
-    video:'retain-on-failure',
+    video: 'on-first-retry',
     headless:true,
     
     
@@ -56,7 +56,7 @@ export default defineConfig({
   name: 'edge',
   use: {
     ...devices['Desktop Edge'],
-    channel: 'msedge',
+ 
   },
 },
 {
