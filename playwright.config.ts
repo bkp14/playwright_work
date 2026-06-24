@@ -1,12 +1,10 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv'
-
+import path from 'path'; 
 const envName = process.env.ENV || 'qa';
 
 dotenv.config({
-  // Force Playwright to always use your unrestricted E: drive folder for all browsers
-  path: `./env/.env.${envName}`
-
+  path: path.resolve(__dirname, 'env', `.env.${envName}`)
 });
 process.env.PLAYWRIGHT_BROWSERS_PATH = process.env.PLAYWRIGHT_BROWSERS_PATH || 'E:\\playwright_work\\pw-browsers';
 /**
