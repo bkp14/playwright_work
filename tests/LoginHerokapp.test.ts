@@ -4,7 +4,7 @@ test.beforeEach(async({page})=>{
 } )
 test.describe('Login Module',()=>{
 test('valid Login Test',async ({page}) => {
-    await page.fill('#username',process.env.uname!);
+    await page.fill('#username',process.env.unae!);
     await page.fill('#password',process.env.pword!);
     await page.click('.fa.fa-2x.fa-sign-in');
     await page.isVisible('.icon-2x.icon-signout')
@@ -22,5 +22,5 @@ test ('invalid login test',async({page}) => {
 })
 })
 test.afterEach(async({page})=>{
-  console.log("test completed")
+  console.log("Herokapp test completed")
 })
