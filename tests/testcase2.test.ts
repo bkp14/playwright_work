@@ -8,10 +8,10 @@ test("Login test", async()=>{
     const page=await context.newPage();
     await page.goto("https://automationexercise.com/");
     await page.getByRole('link', { name: ' Signup / Login' }).click();
-    await page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address').fill("tamilkumar0027@gmail.com")
+    await page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address').fill("kp09@gmail.com")
     await page.getByRole('textbox', { name: 'Password' }).fill("Kiot1234");
     await page.getByRole('button', { name: 'Login' }).click();
 
-    const msg=await page.getByText('Logged in as TAMIL KUMAR').textContent();
-    await expect(msg).toContain("TAMIL"); 
+    const msg=await page.getByText('Logged in as admin').textContent();
+    await expect(msg).toContain("admin"); 
 })

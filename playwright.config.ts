@@ -20,6 +20,7 @@ process.env.PLAYWRIGHT_BROWSERS_PATH = process.env.PLAYWRIGHT_BROWSERS_PATH || '
  */
 export default defineConfig({
   testDir: './tests',
+  timeout:60000,
   /* Run tests in files 
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */

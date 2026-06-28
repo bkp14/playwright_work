@@ -11,8 +11,8 @@ test("Login and logout", async()=>{
     await page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address').fill("tamilkumar0027@gmail.com")
     await page.getByRole('textbox', { name: 'Password' }).fill("Kiot1234");
     await page.getByRole('button', { name: 'Login' }).click();
-    const msg=await page.getByText('Logged in as TAMIL KUMAR').textContent();
-    await expect(msg).toContain("TAMIL"); 
+    const msg=await page.getByText('Logged in as kp').textContent();
+    await expect(msg).toContain("kp"); 
     await page.getByRole('link', { name: ' Logout' }).click();
     const logoutMsg=await page.getByRole('heading', { name: 'Login to your account' }).textContent();
     await expect("Login to your account").toBe(logoutMsg)

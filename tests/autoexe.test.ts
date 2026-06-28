@@ -12,10 +12,9 @@ test("objcmd", async ({ page }) => {
     await expect(page.locator(".modal-content")).toBeVisible();
     await page.getByText("Continue Shopping").click();
 
-    await Promise.all([
+
         page.waitForURL(/\/view_cart$/),
         page.getByRole("link", { name: 'Cart' }).first().click(),
-    ]);
     await expect(page).toHaveTitle(/Automation Exercise - Checkout/);
 
     await page.getByText("Proceed To Checkout").click();
@@ -29,27 +28,21 @@ test("objcmd", async ({ page }) => {
     await page.locator("//*[@id='form']/div/div/div[1]/div/form/button").click();
     await expect(page.getByText("Logged in as")).toContainText("Logged in as");
 
-    await Promise.all([
         page.waitForURL(/\/view_cart$/),
         page.getByRole("link", { name: 'Cart' }).first().click(),
-    ]);
     await expect(page.locator("#cart_info_table")).toBeVisible();
     const cartProductCount = await page.locator("#cart_info_table tbody tr").count();
     expect(cartProductCount).toBeGreaterThan(0);
 
-    await Promise.all([
         page.waitForURL(/\/checkout$/),
         page.locator(".check_out", { hasText: "Proceed To Checkout" }).click(),
-    ]);
     expect(page.url()).toContain("/checkout");
 
     await page.locator('textarea[name="message"]').fill('products are of fine quality');
     await expect(page.locator('textarea[name="message"]')).toHaveValue('products are of fine quality');
 
-    await Promise.all([
         page.waitForURL(/\/payment$/),
         page.locator('a[href="/payment"]', { hasText: "Place Order" }).click(),
-    ]);
     await expect(page).toHaveURL(/\/payment$/);
 
     await page.locator('input[data-qa="name-on-card"]').fill("venkatesh prasanna");

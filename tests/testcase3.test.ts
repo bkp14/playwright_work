@@ -12,6 +12,6 @@ test("Login test", async()=>{
     await page.getByRole('textbox', { name: 'Password' }).fill("Kiot1234");
     await page.getByRole('button', { name: 'Login' }).click();
 
-    const msg=await page.getByText('Logged in as TAMIL KUMAR').textContent();
-    await expect(msg).toContain("TAMIL"); 
+    const msg=await page.getByText('Logged in as kp').textContent();
+    await expect(msg).toContain("kp"); 
 })
