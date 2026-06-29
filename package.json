@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test":"npx playwright test",
     "test:qa": "cross-env ENV=qa playwright test tests/LoginHerokapp.test.ts",
     "test:uat": "cross-env ENV=uat playwright test tests/LoginTutorialsNinja.test.ts",
-    "test:prod": "cross-env ENV=prod playwright test tests/LoginDemoBlaze.test.ts"
+    "test:prod": "cross-env ENV=prod playwright test tests/LoginDemoBlaze.test.ts",
+    "lf":"npx playwright test --last-failed"
+
   },
   "keywords": [],
   "author": "",

@@ -11,7 +11,7 @@ test('valid Login Test',async ({page}) => {
     await expect(page.locator('.flash.success')).toBeVisible();
 });
 
-test ('invalid login test',async({page}) => {
+test('invalid login test',async({page}) => {
   await page.fill('#username',"kn");
     await page.fill('#password','n kh');
     await page.click('.fa.fa-2x.fa-sign-in'); 

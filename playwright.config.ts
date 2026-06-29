@@ -1,10 +1,11 @@
 import { defineConfig, devices } from '@playwright/test';
-import dotenv from 'dotenv'
-import path from 'path'; 
+import path from 'path';
+import dotenv from 'dotenv';
+
 const envName = process.env.ENV || 'qa';
 
 dotenv.config({
-  path: path.resolve(__dirname, 'env', `.env.${envName}`)
+  path: path.resolve(process.cwd(), 'env', `.env.${envName}`)
 });
 process.env.PLAYWRIGHT_BROWSERS_PATH = process.env.PLAYWRIGHT_BROWSERS_PATH || 'E:\\playwright_work\\pw-browsers';
 /**
@@ -19,21 +20,31 @@ process.env.PLAYWRIGHT_BROWSERS_PATH = process.env.PLAYWRIGHT_BROWSERS_PATH || '
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
+  //repeatEach:3,
+  
   testDir: './tests',
   timeout:60000,
-  /* Run tests in files 
+  expect:{
+    timeout:5000
+  },
+  globalTimeout:100*1000,
+  
+  // Run tests in files 
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
+  
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 3 : undefined,
+  workers: process.env.CI ? 1: 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html', { open: 'never' }],
     ['allure-playwright']
   ],
+      //testMatch:["tests/grouptest.test.ts"],
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
          
@@ -42,7 +53,9 @@ export default defineConfig({
     screenshot:'on-first-failure',
     video: 'retain-on-failure',
     headless:true,
-    
+
+    actionTimeout:10000,
+    navigationTimeout:15000
     
   },
 
