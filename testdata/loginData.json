@@ -1,0 +1,10 @@
+{
+    "valid":{
+        "uname":"tamilkumar@gmail.com",
+        "pword":"kiot1234"
+    }
+    ,"invalid":{
+        "uname":"tamikdewfear@gmail.com",
+        "pword":"kkf1234"
+    }
+}
