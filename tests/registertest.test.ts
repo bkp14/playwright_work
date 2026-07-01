@@ -11,7 +11,7 @@ test.describe("register", ()=>{
 for (const i of data){
 test(i.testname, async({hp,rp,page})=>{
      await rp.register(i.firstname,i.lastname,i.email,i.mobile,i.password,i.retype)
-      expect(page.url()).toContain("success")
+      expect(await page.url()).toContain("success")
 })
 }
    
