@@ -1,0 +1,7 @@
+
+    :root, :host {
+      --status-passed: #000000 !important;       /* Vibrant Green for Charts & Badges */
+      --color-emerald-500: #000000 !important;   /* Overrides structural background accents */
+      --color-green-400: #000000 !important;     /* Lighter green highlights */
+    }
+  
