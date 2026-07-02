@@ -1,7 +1,6 @@
 import { Before,After } from "@cucumber/cucumber";
 import { chromium,Browser,Page } from "@playwright/test";
-import { pageFixture } from "./pagefixture";
-
+import { pageFixture } from "./pageFixture";
 let browser:Browser;
 
 Before (async function () {
