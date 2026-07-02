@@ -1,0 +1,29 @@
+{
+  "name": "playwright_cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "test": "cucumber-js src/test/features/Register.feature -f json:test-result/cucumber_report.json",
+  "posttest": "npx ts-node src/helper/report.mts",
+  "parallel": "cucumber-js src/test/features --parallel 2 -f json:test-result/cucumber_report.json",
+  "failed": "cucumber-js @rerun.txt",
+  "ci": "cucumber-js src/test/features --tags @smoke --format json:reports/report.json",
+  "reg": "cucumber-js src/test/features --tags @reg -f json:test-result/cucumber_report.json"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "multiple-cucumber-html-reporter": "^4.0.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
