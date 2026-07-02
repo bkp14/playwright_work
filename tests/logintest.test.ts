@@ -1,6 +1,6 @@
 import loginData from "../testdata/loginData.json"
 import {test,expect} from "../fixtures/basefixtures"
-
+import { LoginFactory } from "../Factory/LoginFactory"
 test.describe("login test",()=>{
     test.beforeEach(async({hp})=>{
         await hp.navigate()
@@ -10,8 +10,17 @@ test.describe("login test",()=>{
     test ("valid login",async({lp})=>{
         await lp.login(loginData.valid.uname,loginData.valid.pword);
     })
-       test ("invalid login",async({lp})=>{
-        lp.login(loginData.invalid.uname,loginData.invalid.pword);
-        await expect(lp.errormsg).toHaveText("Warning: No match for E-Mail Address and/or Password.")
-    })
+    test("invalid login", async ({ lp }) => {
+
+        const invalidUser = LoginFactory.invalidUser();
+
+        await lp.login(
+            invalidUser.uname,
+            invalidUser.pword
+        );
+
+        await expect(lp.errormsg)
+            .toHaveText("Warning: No match for E-Mail Address and/or Password.");
+
+    });
 })
