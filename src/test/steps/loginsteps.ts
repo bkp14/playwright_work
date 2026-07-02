@@ -1,6 +1,6 @@
 import {Given,When,Then,setDefaultTimeout} from "@cucumber/cucumber";
 import {expect} from "@playwright/test"
-import { pageFixture } from "../../hooks/pageFixture"; // 🌟 Fixed casing here
+import { pageFixture } from "../../hooks/page-fixture";
 
 setDefaultTimeout(60 * 1000); 
 
