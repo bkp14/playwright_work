@@ -1,0 +1,675 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-review;add-review-on-product",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Add review on product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 290809000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4698205899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on the Products button",
+            "match": {
+              "location": "src\\test\\steps\\review.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1157341899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user clicks on View Product",
+            "match": {
+              "location": "src\\test\\steps\\review.step.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 739128700
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "Tamil"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "email",
+                      "tamil@test.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "review",
+                      "Excellent product. Loved it!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user enters review details",
+            "match": {
+              "location": "src\\test\\steps\\review.step.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136705899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user clicks on Submit button",
+            "match": {
+              "location": "src\\test\\steps\\review.step.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48283900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user should see the success message \"Thank you for your review.\"",
+            "match": {
+              "location": "src\\test\\steps\\review.step.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12987399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25665700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-review",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Review",
+    "tags": [],
+    "uri": "src\\test\\features\\AddReview.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "register-feature;register-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Register with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 90616300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the homepage",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2928311500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on the loginpage",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 517968399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user enters valid name and email",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63059399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on signup",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 382181800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user enters registration details",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 190219400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user clicks on create account",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 872027300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "account should be created successfully",
+            "match": {
+              "location": "src\\test\\steps\\register.step.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80684300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14565299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "register-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Register Feature",
+    "tags": [],
+    "uri": "src\\test\\features\\Register.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-feature;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 122564099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4088289300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on the login page",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 441918699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user enters valid username and password",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107653399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "user clicks on login",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 921197000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user can see the username in the dashboard",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67115599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 44289399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-feature;login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 91766199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3410414800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on the login page",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 473331099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user enters username \"Tamil@test.com\" and password \"Password123\"",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58535299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user clicks on login",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 371090800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user should see the error message \"Your email or password is incorrect!\"",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69897199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11317500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalidLogin",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-feature;login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 82631499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3693942199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "user clicks on the login page",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395699300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user enters username \"test@123.com\" and password \"WrongPass123\"",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 61344600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user clicks on login",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 378717100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user should see the error message \"Your email or password is incorrect!\"",
+            "match": {
+              "location": "src\\test\\steps\\login.step.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74680999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10734299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalidLogin",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "search-product;valid-product-search",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Valid product search",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 82196800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user on the homepage",
+            "match": {
+              "location": "src\\test\\steps\\search.step.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1617457900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "click the products button",
+            "match": {
+              "location": "src\\test\\steps\\search.step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1060290600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "enter the product in the search bar",
+            "match": {
+              "location": "src\\test\\steps\\search.step.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120607499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "click search icon",
+            "match": {
+              "location": "src\\test\\steps\\search.step.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1197320999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "enter product should be displayed",
+            "match": {
+              "location": "src\\test\\steps\\search.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 14317200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-product",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search product",
+    "tags": [],
+    "uri": "src\\test\\features\\search.feature"
+  }
+]
