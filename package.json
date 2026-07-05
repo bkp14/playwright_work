@@ -1,0 +1,24 @@
+{
+  "name": "bdd_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js src/test/features/",
+    "parallel": "cucumber-js --parallel 2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "dotenv": "^17.4.2",
+    "winston": "^3.19.0"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
