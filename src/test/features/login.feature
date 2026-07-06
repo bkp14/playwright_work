@@ -16,5 +16,5 @@ Feature: Login Feature
 
     Examples:
       | username       | password     | errorMessage                         |
-      | Tamil@test.com | Password123  | Your email or password is incorrect! |
+      | krishna@test.com | Password123  | Your email or password is incorrect! |
       | test@123.com   | WrongPass123 | Your email or password is incorrect! |
