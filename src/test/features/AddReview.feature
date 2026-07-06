@@ -6,7 +6,7 @@ Feature: Product Review
     When user clicks on View Product
     When user enters review details
       | name   | Tamil                        |
-      | email  | tamil@test.com               |
+      | email  | krishna@test.com               |
       | review | Excellent product. Loved it! |
     And user clicks on Submit button
     Then user should see the success message "Thank you for your review."
