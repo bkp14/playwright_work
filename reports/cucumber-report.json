@@ -1,0 +1,328 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "contact-functionality-in-demoblaze-application;verify-the-user-can-send-a-contact-message-with-excel-data",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify the user can send a contact message with excel data",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 734853299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the Demoblaze application",
+            "match": {
+              "location": "src\\test\\steps\\signupsteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2964977999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the user opens the contact dialog",
+            "match": {
+              "location": "src\\test\\steps\\contactsteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 339945799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user enters contact details from excel",
+            "match": {
+              "location": "src\\test\\steps\\contactsteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1013994200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user sends the contact message",
+            "match": {
+              "location": "src\\test\\steps\\contactsteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 539116300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the user should see contact success popup",
+            "match": {
+              "location": "src\\test\\steps\\contactsteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8692600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 89881400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "contact-functionality-in-demoblaze-application",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "contact functionality in demoblaze application",
+    "tags": [],
+    "uri": "src\\test\\features\\contact.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality-in-demoblaze-application;verify-the-user-login-with-csv-credentials",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Verify the user login with csv credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 286667999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user navigates to the Demoblaze application",
+            "match": {
+              "location": "src\\test\\steps\\signupsteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2144054799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the user opens the login dialog",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135367000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user enters login credentials from csv",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186132400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90053099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the user should be logged in successfully",
+            "match": {
+              "location": "src\\test\\steps\\loginsteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4493935199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 53788699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality-in-demoblaze-application",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "login functionality in demoblaze application",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "signup-functionality-in-demoblaze-application;verify-the-user-signup-with-new-credentials",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify the user signup with new credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 231943699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "the user navigates to the Demoblaze application",
+            "match": {
+              "location": "src\\test\\steps\\signupsteps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2629487099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "the user opens the signup dialog",
+            "match": {
+              "location": "src\\test\\steps\\signupsteps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99651499
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "xsasa",
+                      "sasawas"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters the credentials",
+            "match": {
+              "location": "src\\test\\steps\\signupsteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167177300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user clicks on  the signup button",
+            "match": {
+              "location": "src\\test\\steps\\signupsteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1255652600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the user should see a success popup",
+            "match": {
+              "location": "src\\test\\steps\\signupsteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1158599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 59227599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "signup-functionality-in-demoblaze-application",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "signup functionality in demoblaze application",
+    "tags": [],
+    "uri": "src\\test\\features\\signup.feature"
+  }
+]
